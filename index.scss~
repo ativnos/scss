@@ -1,0 +1,33 @@
+.content {
+  .content-subhead {
+    color: #3c4527;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+  }
+  .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.splash {
+  margin: 0em auto 0;
+  padding: 0em 0em;
+  background: #dbe2cb;
+  .splash-head {
+    font-size: 2.7em;
+    margin: 0em 0;
+    line-height: 1.2em;
+  }
+  .splash-subhead {
+    color: #3c4527;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+  .primary-button {
+    font-size: 150%;
+  }
+}

@@ -1,0 +1,206 @@
+body {
+  background-color: #ffffff;
+}
+.contentblock {
+  background: #FFF;
+}
+.footer {
+  background: #eff2e8;
+}
+
+.pure-skin-mine {
+  a {
+    &:link, &:visited {
+      color: #1a1d11;
+    }
+  }
+  .pure-button {
+    font-size: 100%;
+    *font-size: 90%;
+    /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible;
+    /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1.5em 0.5em;
+    color: #1a1d11;
+    /* rgba not supported (IE 8) */
+    /* color: rgba(0, 0, 0, 0.80); rgba supported */
+    /* *color: #444; IE 6 & 7 */
+    border: 1px solid #b8c397;
+    /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);
+    /*IE9 + everything else*/
+    background-color: #bec9a1;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    /* Transitions */
+    -webkit-transition: 0.1s linear -webkit-box-shadow;
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+  }
+  .pure-button-hover, .pure-button:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.05)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05));
+    background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+    background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
+  }
+  .pure-button-active, .pure-button:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  }
+  .pure-button-primary, .pure-button-selected {
+    background-color: #6F823A;
+    color: #fbfcf8;
+  }
+  a {
+    &.pure-button-primary, &.pure-button-selected {
+      background-color: #6F823A;
+      color: #fbfcf8;
+    }
+  }
+  .pure-form {
+    input {
+      &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus {
+        outline: thin dotted #333;
+        outline: 1px auto #129FEA;
+      }
+      &[readonly] {
+        background: #eee;
+        /* menu hover bg color */
+        color: #777;
+        /* menu text color */
+        border-color: #ccc;
+      }
+    }
+    select[readonly], textarea[readonly], input[readonly]:focus, select[readonly]:focus, textarea[readonly]:focus {
+      background: #eee;
+      /* menu hover bg color */
+      color: #777;
+      /* menu text color */
+      border-color: #ccc;
+    }
+    input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
+      color: #b94a48;
+      border: 1px solid #ee5f5b;
+    }
+    input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+      border-color: #e9322d;
+    }
+    input {
+      &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus {
+        outline-color: #e9322d;
+      }
+    }
+  }
+  .pure-table {
+    border: 1px solid #dbe2cb;
+    td, th {
+      border-left: 1px solid #dbe2cb;
+      /* inner column border */
+    }
+    thead {
+      background-color: #dbe1cb;
+      color: #2b311c;
+    }
+    td {
+      background-color: #eff2e8;
+      color: #3c4527;
+    }
+  }
+  .pure-table-odd td, .pure-table-striped tr:nth-child(2n-1) td {
+    background-color: #dbe2cb;
+    color: #222716;
+  }
+  .pure-table-bordered td {
+    border-bottom: 1px solid #dbe2cb;
+  }
+  .pure-menu-separator {
+    background-color: #dbe2cb;
+  }
+  .pure-menu {
+    &.pure-menu-open, &.pure-menu-horizontal li .pure-menu-children {
+      background: #eff2e8;
+      /* Old browsers */
+      border: 1px solid #dbe2cb;
+    }
+    a {
+      color: #3c4527;
+    }
+    .pure-menu-can-have-children > li {
+      &:after {
+        color: #3c4527;
+      }
+      &:hover:after {
+        color: #222716;
+      }
+    }
+    .pure-menu-open {
+      background: #d4dcc1;
+    }
+    li {
+      a {
+        &:hover, &:focus {
+          background: #d4dcc1;
+        }
+      }
+      &.pure-menu-disabled a {
+        &:hover, &:focus {
+          background: #eff2e8;
+          color: #95a966;
+        }
+      }
+    }
+    .pure-menu-disabled > a, .pure-menu-can-have-children.pure-menu-disabled > a:after {
+      color: #95a966;
+    }
+    .pure-menu-heading {
+      border-bottom: solid 1px #dbe2cb;
+    }
+    li.pure-menu-selected a {
+      background-color: #6F823A;
+      color: #fbfcf8;
+    }
+    &.pure-menu-open.pure-menu-fixed {
+      border-bottom: 1px solid #dbe2cb;
+    }
+    &.pure-menu-horizontal {
+      border: none;
+      .pure-menu-heading {
+        border: none;
+      }
+    }
+  }
+}
+
+/* unvisited link */
+/* visited link */
+
+/* foundational CSS */
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+
+/* nth-child selector for modern browsers */
+
+/* BORDERED TABLES */
+
+/* LINK STYLES */
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+
+/* DISABLED STATES */
+
+/* HEADINGS */
+
+/* SELECTED MENU ITEM */
+
+/* FIXED MENU */
+
+/* remove borders for horizontal menus */
