@@ -16,18 +16,25 @@ body {
   .pure-button-small {
     font-size: 75%;
     *font-size: 68%;
+    /*IE 6/7 - To reduce IE's oversized button text*/
     *overflow: visible;
-    
+    /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
     padding: 3px 5px 3px;
   }
   .pure-button {
     color: #1a1d11;
+    /* rgba not supported (IE 8) */
+    /* color: rgba(0, 0, 0, 0.80); rgba supported */
+    /* *color: #444; IE 6 & 7 */
     border: 1px solid #b8c397;
+    /*IE 6/7/8*/
     border: none rgba(0, 0, 0, 0);
+    /*IE9 + everything else*/
     background-color: #bec9a1;
     text-decoration: none;
     border-radius: 2px;
     -webkit-font-smoothing: antialiased;
+    /* Transitions */
     -webkit-transition: 0.1s linear -webkit-box-shadow;
     -moz-transition: 0.1s linear -moz-box-shadow;
     -ms-transition: 0.1s linear box-shadow;
@@ -117,16 +124,16 @@ body {
   }
   .pure-menu {
     &.pure-menu-open, &.pure-menu-horizontal li .pure-menu-children {
-      background: #eff2e8;
+      background: #3c4527;
       /* Old browsers */
       border: 1px solid #dbe2cb;
     }
     a {
-      color: #3c4527;
+      color: #eff2e8;
     }
     .pure-menu-can-have-children > li {
       &:after {
-        color: #3c4527;
+        color: #eff2e8;
       }
       &:hover:after {
         color: #222716;
@@ -138,24 +145,25 @@ body {
     li {
       a {
         &:hover, &:focus {
-          background: #d4dcc1;
+          background: #2b311c;
         }
       }
       &.pure-menu-disabled a {
         &:hover, &:focus {
-          background: #eff2e8;
-          color: #95a966;
+          background: #2b311c;
+          color: #2b311c;
         }
       }
     }
     .pure-menu-disabled > a, .pure-menu-can-have-children.pure-menu-disabled > a:after {
-      color: #95a966;
+      color: #2b311c;
     }
     .pure-menu-heading {
+	padding: 25px;
       border-bottom: solid 1px #dbe2cb;
     }
     li.pure-menu-selected a {
-      background-color: #6F823A;
+      background-color: #2b311c;
       color: #fbfcf8;
     }
     &.pure-menu-open.pure-menu-fixed {
@@ -169,3 +177,32 @@ body {
     }
   }
 }
+
+/* unvisited link */
+/* visited link */
+
+/* foundational CSS */
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+
+/* nth-child selector for modern browsers */
+
+/* BORDERED TABLES */
+
+/* LINK STYLES */
+
+/* Focus style for a dropdown menu-item when the parent has been opened */
+
+/* DISABLED STATES */
+
+/* HEADINGS */
+
+/* SELECTED MENU ITEM */
+
+/* FIXED MENU */
+
+/* remove borders for horizontal menus */

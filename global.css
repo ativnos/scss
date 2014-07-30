@@ -1,100 +1,85 @@
-.footer {
-  ul {
-    list-style: none;
-    text-align: center;
-    padding: 20px;
-  }
-  li {
-    display: inline-block;
-  }
-}
+.footer ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px; }
+.footer li {
+  display: inline-block; }
+
 .ajaxloadergif {
-    padding-left:10px;
-    padding-right:10px;
-}
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .contentblock {
   padding-top: 50px;
   padding-bottom: 25px;
   padding-right: 10px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 .pure-menu {
-  text-align: left;
-  ul {
-    float: right !important;
-  }
-  a {
-    display: inline-block;
-  }
-}
+  text-align: left; }
+  .pure-menu ul {
+    float: right !important; }
+  .pure-menu a {
+    display: inline-block; }
 
 .pure-menu-heading {
   display: inline-block !important;
-}
+  float: left; }
 
 .pure-menu a#pull, #homebutton {
-  display: none;
-}
+  display: none; }
 
 .headroom {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  transition: all .2s ease-in-out;
-}
+  transition: all .2s ease-in-out; }
 
 .headroom--unpinned {
-  top: -100px;
-}
+  top: -100px; }
 
 .headroom--pinned {
-  top: 0;
-}
+  top: 0; }
 
 @media screen and (max-width: 420px) {
   .pure-menu-heading {
-    display: none !important;
-  }
+    display: none !important; }
+
   pure-menu {
     height: auto;
-    border-bottom: 0;
-  }
+    border-bottom: 0; }
+
   #menulist {
     display: none;
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
+
   .pure-menu {
-    li {
+    overflow: scroll; }
+    .pure-menu li {
       display: block;
       float: none;
       width: 100%;
-      position: relative;
-    }
-    a {
+      position: relative; }
+    .pure-menu a {
       text-align: left;
       width: 100%;
-      text-indent: 25px;
-      &#pull {
+      text-indent: 25px; }
+      .pure-menu a#pull {
         display: block;
         width: 100%;
-        position: relative;
-      }
-    }
-  }
+        position: relative; }
+
   #homebutton {
-    display: block;
-  }
+    display: block; }
+
   .pure-menu a#pull:after {
     content: "";
-    background: url('nav-icon.png') no-repeat;
+    background: url("nav-icon.png") no-repeat;
     width: 30px;
     height: 30px;
     display: inline-block;
     position: absolute;
     right: 15px;
-    top: 10px;
-  }
-}
+    top: 10px; } }

@@ -1,0 +1,39 @@
+.tagbar {
+    height: 24px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+.container {
+    width: 400px;
+    padding: 1em;
+    background: #000;
+    margin: auto;
+}
+
+.container::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.cube {
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    width: 200px; height: 200px;
+}
+#tech {
+    background: #00551D;
+}
+#translation {
+    background: #746400;
+}
+#design {
+    background: #741200;
+}
+#pr {
+    background: #1F084F;
+}
